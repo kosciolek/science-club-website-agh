@@ -46,13 +46,30 @@ import { MOBILE_MENU_DIALOG_ID } from "./const";
   <nav>
     <ul class="flex flex-col gap-8">
       <li>
-        <a autofocus class="text-lg font-semibold" href="/projekty">Projekty</a>
+        <a
+          autofocus
+          class="text-lg font-semibold"
+          href={`${import.meta.env.BASE_URL}/projekty`}>Projekty</a
+        >
       </li>
       <li>
-        <a class="text-lg font-semibold" href="/obszar-badan">Obszar badań</a>
+        <a
+          class="text-lg font-semibold"
+          href={`${import.meta.env.BASE_URL}/obszar-badan`}>Obszar badań</a
+        >
       </li>
-      <li><a class="text-lg font-semibold" href="/statut">Statut</a></li>
-      <li><a class="text-lg font-semibold" href="/kontakt">Kontakt</a></li>
+      <li>
+        <a
+          class="text-lg font-semibold"
+          href={`${import.meta.env.BASE_URL}/statut`}>Statut</a
+        >
+      </li>
+      <li>
+        <a
+          class="text-lg font-semibold"
+          href={`${import.meta.env.BASE_URL}/kontakt`}>Kontakt</a
+        >
+      </li>
       <li>
         <a href="https://www.facebook.com/profile.php?id=61560157695092"
           ><Icon

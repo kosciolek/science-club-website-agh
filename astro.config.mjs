@@ -15,5 +15,5 @@ export default defineConfig({
   ],
   // for github pages
   site: "https://kosciolek.github.io",
-  base: "science-club-website-agh",
+  base: "/science-club-website-agh",
 });
