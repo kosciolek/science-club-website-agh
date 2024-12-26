@@ -1,0 +1,22 @@
+---
+interface Props {
+  jobTitle: string;
+  name: string;
+  email: string;
+}
+
+const { jobTitle, name, email } = Astro.props as Props;
+---
+
+<div itemscope itemtype="https://schema.org/Person">
+  <div class="mb-1 font-bold" itemprop="jobTitle">
+    {jobTitle}
+  </div>
+
+  <div itemprop="name" class="mb-1">
+    {name}
+  </div>
+  <div>
+    <a href={`mailto:${email}`} itemprop="email">{email}</a>
+  </div>
+</div>

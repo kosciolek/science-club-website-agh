@@ -1,0 +1,44 @@
+---
+import Contact from "../contact.astro";
+import Layout from "../layout.astro";
+import PageHeader from "../page-header.astro";
+
+const mainMail = "YTI0dWRISjVkRzl1UUdGbmFDNWxaSFV1Y0d3PQ==";
+const saczkaMail = "YjJ4bGEzTmhZM3ByWVVCemRIVmtaVzUwTG1GbmFDNWxaSFV1Y0d3PQ==";
+const pawlakMail = "YlhCaGQyeGhhMEJ6ZEhWa1pXNTBMbUZuYUM1bFpIVXVjR3c9";
+const bajdaMail = "WW1GcVpHRkFZV2RvTG1Wa2RTNXdiQT09";
+const swistunMail = "WlhOM2FYTjBkVzVBWVdkb0xtVmtkUzV3YkE9PQ==";
+
+const unfuzz = (email: string) => atob(atob(email));
+---
+
+<Layout>
+  <PageHeader>Kontakt</PageHeader>
+  <address>
+    Email główny: <a href={`mailto:${unfuzz(mainMail)}`}>{unfuzz(mainMail)}</a>
+  </address>
+  <hr class="my-4" />
+  <Contact
+    jobTitle="Przewodniczący SKN „Tryton”"
+    name="Aleksander Saczka"
+    email={unfuzz(saczkaMail)}
+  />
+  <hr class="my-4" />
+  <Contact
+    jobTitle="Zastępca Przewodniczącego SKN „Tryton”"
+    name="Mikołaj Pawlak"
+    email={unfuzz(pawlakMail)}
+  />
+  <hr class="my-4" />
+  <Contact
+    jobTitle="Opiekun naukowy SKN „Tryton”"
+    name="prof. dr hab. Tomasz Bajda"
+    email={unfuzz(bajdaMail)}
+  />
+  <hr class="my-4" />
+  <Contact
+    jobTitle="Opiekun naukowy SKN „Tryton”"
+    name="mgr inż. Eugeniusz Świstuń"
+    email={unfuzz(swistunMail)}
+  />
+</Layout>

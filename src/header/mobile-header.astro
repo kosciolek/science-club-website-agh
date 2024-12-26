@@ -1,0 +1,67 @@
+---
+import { Image } from "astro:assets";
+import logo from "./logo.svg";
+import { Icon } from "astro-icon/components";
+import MobileMenuButton from "./mobile-menu-button.astro";
+import { MOBILE_MENU_DIALOG_ID } from "./const";
+---
+
+<style>
+  dialog[open] {
+    opacity: 1;
+  }
+
+  @starting-style {
+    dialog[open] {
+      opacity: 0;
+    }
+  }
+
+  dialog {
+    opacity: 0;
+    transition:
+      opacity 150ms ease-out,
+      overlay 150ms ease-out allow-discrete,
+      display 150ms ease-out allow-discrete;
+  }
+  dialog::backdrop {
+    opacity: 0;
+  }
+</style>
+
+<header
+  class="fixed flex h-[theme(headerHeight)] w-full items-center justify-between bg-white px-4 md:hidden"
+>
+  <a href="/" aria-label="Idź na stronę główną" class="flex items-center"
+    ><Image src={logo} alt="logo" height={48} /><span
+      class="pl-4 text-lg font-semibold text-brand">Tryton</span
+    ></a
+  >
+  <MobileMenuButton />
+</header>
+<dialog
+  id={MOBILE_MENU_DIALOG_ID}
+  class="fixed top-0 m-0 mt-[theme(headerHeight)] h-full max-h-full w-full max-w-full bg-white px-4 py-4"
+>
+  <nav>
+    <ul class="flex flex-col gap-8">
+      <li>
+        <a autofocus class="text-lg font-semibold" href="/projekty">Projekty</a>
+      </li>
+      <li>
+        <a class="text-lg font-semibold" href="/obszar-badan">Obszar badań</a>
+      </li>
+      <li><a class="text-lg font-semibold" href="/statut">Statut</a></li>
+      <li><a class="text-lg font-semibold" href="/kontakt">Kontakt</a></li>
+      <li>
+        <a href="https://www.facebook.com/profile.php?id=61560157695092"
+          ><Icon
+            name="fa-brands:facebook-square"
+            size={40}
+            aria-label="Strona Facebook"
+          /></a
+        >
+      </li>
+    </ul>
+  </nav>
+</dialog>

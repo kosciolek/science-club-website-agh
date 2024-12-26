@@ -1,0 +1,34 @@
+---
+import { Image } from "astro:assets";
+import logo from "./logo.svg";
+import { Icon } from "astro-icon/components";
+---
+
+<header class="hidden items-center justify-between px-8 py-8 md:flex">
+  <a class="flex items-center" href="/" aria-label="Idź na stronę główną">
+    <Image src={logo} alt="logo" height={64} /><div
+      class="pl-8 text-lg font-semibold"
+    >
+      <span>Koło Naukowe "<span class="text-brand">Tryton</span>"</span>
+    </div>
+  </a>
+  <nav>
+    <ul class="flex items-center gap-8 pl-4">
+      <li><a class="text-lg font-semibold" href="/projekty">Projekty</a></li>
+      <li>
+        <a class="text-lg font-semibold" href="/obszar-badan">Obszar badań</a>
+      </li>
+      <li><a class="text-lg font-semibold" href="/statut">Statut</a></li>
+      <li><a class="text-lg font-semibold" href="/kontakt">Kontakt</a></li>
+      <li>
+        <a href="https://www.facebook.com/profile.php?id=61560157695092"
+          ><Icon
+            name="fa-brands:facebook-square"
+            size={40}
+            aria-label="Strona Facebook"
+          /></a
+        >
+      </li>
+    </ul>
+  </nav>
+</header>
