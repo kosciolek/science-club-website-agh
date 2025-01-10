@@ -3,7 +3,361 @@ import Layout from "../layout.astro";
 import PageHeader from "../page-header.astro";
 ---
 
+<style>
+  ol {
+    list-style-type: decimal;
+    margin-left: 32px;
+    margin-top: 8px;
+  }
+
+  li {
+    @apply mb-2;
+  }
+  h2 {
+    @apply mb-4 mt-6 text-2xl font-bold text-brand;
+  }
+</style>
 <Layout>
   <PageHeader>Statut</PageHeader>
-  <p>W trakcie zmian.</p>
+  <h2>Postanowienia ogólne</h2>
+  <ol>
+    <li>
+      Koło Naukowe pod nazwą „Tryton”, jest uczelnianą organizacją studencką, w
+      rozumieniu art. 111 ustawy z dnia 20 lipca 2018 r. - Prawo o szkolnictwie
+      wyższym i nauce.
+    </li>
+    <li>
+      Koło zrzesza wyłącznie studentów Akademii Górniczo-Hutniczej im.
+      Stanisława Staszica w Krakowie, zwanej dalej „Uczelnią”.
+    </li>
+    <li>
+      Siedzibą Koła jest Wydział Geologii, Geofizyki i Ochrony Środowiska.
+    </li>
+    <li>Koło może posługiwać się logo AGH.</li>
+  </ol>
+  <h2>Cele i zadania Koła</h2>
+  <ol>
+    <li>
+      Podstawowym celem Koła jest rozbudzanie zainteresowań pracą naukową,
+      badawczą w dziedzinie inżynierii i ochrony środowiska, inżynierii
+      materiałowej, nauk o Ziemi.
+    </li>
+    <li>
+      Celami Koła są w szczególności: <ol>
+        <li>
+          Poszerzanie wiedzy z zakresu inżynierii oraz ochrony środowiska,
+          inżynierii materiałowej, nauk o Ziemi;
+        </li>
+        <li>
+          Promowanie nauki i zdobywanie wiedzy oraz rozwijanie zainteresowań
+          naukowych wśród członków Koła, a także poza nim;
+        </li>
+        <li>
+          Przygotowanie do realizacji prac dyplomowych na jakościowo wysokim
+          poziomie.
+        </li>
+      </ol>
+    </li>
+    <li>
+      Cele, o których mowa w ust. 2 będą realizowane poprzez:
+      <ol>
+        <li>prowadzenie pod kierunkiem Opiekuna Naukowego badań naukowych;</li>
+        <li>organizowanie sesji naukowych;</li>
+        <li>organizowanie warsztatów, spotkań itp.;</li>
+        <li>
+          uczestniczenie w organizacji spotkań z przedstawicielami środowisk
+          naukowych i gospodarczych;
+        </li>
+        <li>prowadzenie strony internetowej.</li>
+      </ol>
+    </li>
+    <li>
+      Do realizacji celów, o których mowa w niniejszym paragrafie, Koło korzysta
+      ze środków materialnych przekazanych przez Uczelnię oraz inne podmioty -
+      za pośrednictwem Uczelni.
+    </li>
+  </ol>
+  <h2>Członkostwo</h2>
+  <ol>
+    <li>
+      Członkiem Koła może zostać student Uczelni, wykazujący zainteresowania
+      naukowe w zakresie inżynierii i ochrony środowiska, inżynierii
+      materiałowej, nauk o Ziemi, osiągający dobre wyniki w nauce,
+      identyfikujący się z celami Koła i wyrażający chęć ich realizacji.
+    </li>
+    <li>
+      Studenta deklarującego chęć członkostwa, w poczet członków Koła przyjmuje
+      Zarząd na podstawie pisemnej deklaracji złożonej przez studenta. Warunkiem
+      pozytywnego rozpatrzenia wniosku jest spełnianie warunków, o których mowa
+      w ust. 1.
+    </li>
+    <li>
+      Wskazując w deklaracji członkowskiej swój adres e-mail student wyraża
+      zgodę na otrzymywanie drogą elektroniczną wszelkich informacji
+      przesyłanych przez Zarząd, dotyczących zarówno spraw indywidualnych, jak i
+      innych informacji o charakterze organizacyjnym.
+    </li>
+    <li>
+      Członek Koła ma prawo do:
+      <ol>
+        <li>udziału we wszelkich formach działalności Koła;</li>
+        <li>zgłaszania wniosków i propozycji w czasie zebrań Koła;</li>
+        <li>dokonywania oceny działalności Zarządu Koła;</li>
+        <li>korzystania z czynnego i biernego prawa wyborczego.</li>
+      </ol>
+    </li>
+    <li>
+      Członek Koła ma obowiązek:
+      <ol>
+        <li>wykazywać się dobrymi wynikami w nauce;</li>
+        <li>regularnie brać udział w zebraniach Koła;</li>
+        <li>aktywnie uczestniczyć w pracach Koła;</li>
+        <li>stosować się do postanowień organów Koła;</li>
+        <li>przestrzegać postanowień niniejszego Regulaminu.</li>
+      </ol>
+    </li>
+    <li>
+      Członkostwo w Kole ustaje na skutek:
+      <ol>
+        <li>
+          dobrowolnej rezygnacji członka, przedłożonej Zarządowi Koła w formie
+          pisemnej;
+        </li>
+        <li>utraty przez członka Koła statusu studenta Uczelni;</li>
+        <li>
+          wykluczenia członka w drodze uchwały Zarządu Koła, w przypadku
+          zaistnienia okoliczności, o których mowa w ust. 7;
+        </li>
+        <li>rozwiązania Koła.</li>
+      </ol>
+    </li>
+    <li>
+      Zarząd Koła może wykluczyć członka z następujących powodów:
+      <ol>
+        <li>świadomego działania na szkodę Koła;</li>
+        <li>nieprzestrzegania postanowień niniejszego Regulaminu;</li>
+        <li>rażącego niewywiązywania się z podjętych wobec Koła zobowiązań;</li>
+        <li>
+          nieusprawiedliwionej nieobecności na 4 zebraniach Koła w ciągu roku
+          akademickiego.
+        </li>
+      </ol>
+    </li>
+    <li>
+      O podjęciu uchwały w sprawie wykluczenia Zarząd Koła informuje
+      wykluczonego członka w formie pisemnej wraz z uzasadnieniem i pouczeniem o
+      przysługującej mu drodze odwoławczej.
+    </li>
+    <li>
+      Od uchwały Zarządu w sprawie wykluczenia, wykluczonemu członkowi
+      przysługuje prawo złożenia odwołania do Walnego Zebrania Członków Koła.
+      Odwołanie składa się za pośrednictwem Zarządu w terminie 14 dni od daty
+      otrzymania przez wykluczonego członka pisemnej informacji o wykluczeniu.
+    </li>
+    <li>
+      Po otrzymaniu odwołania i jego rozpatrzeniu Zarząd, jeśli uzna, że
+      odwołanie zasługuje w całości na uwzględnienie, może uchylić swoją uchwałę
+      w sprawie wykluczenia i przywrócić studenta w prawach członka Koła, o czym
+      student jest informowany w formie pisemnej.
+    </li>
+    <li>
+      W razie wniesienia przez wykluczonego członka Koła odwołania i
+      nieuwzględnieniu przez Zarząd tego odwołania w trybie określonym w ust.
+      10, Zarząd Koła jest obowiązany zwołać Nadzwyczajne Walne Zebranie
+      Członków Koła najpóźniej w terminie 30 dni od daty otrzymania odwołania.
+      Obowiązku tego Zarząd nie musi spełnić jeżeli w terminie 30 dni od daty
+      otrzymania odwołania ma się odbyć Zwyczajne Walne Zebranie Członków Koła.
+    </li>
+    <li>
+      Walne Zebranie Członków Koła po rozpatrzeniu odwołania może podtrzymać
+      bądź uchylić uchwałę Zarządu w sprawie wykluczenia członka Koła. Uchwała
+      Walnego Zebrania Członków Koła jest podejmowana większością 2/3 głosów
+      przy obecności co najmniej połowy Członków Koła.
+    </li>
+  </ol>
+  <h2>Walne zebranie członków Koła</h2>
+  <ol>
+    <li>Walne Zebranie Członków jest najwyższą władzą Koła.</li>
+    <li>
+      Do kompetencji Walnego Zebrania Członków Koła należy w szczególności:
+      <ol>
+        <li>określanie kierunków działalności Koła;</li>
+        <li>decydowanie o strukturze organizacyjnej Koła;</li>
+        <li>wybór członków Zarządu Koła;</li>
+        <li>
+          rozpatrywanie odwołania od uchwały Zarządu w sprawie wykluczenia
+          członka Koła oraz podejmowanie uchwały podtrzymującej lub uchylającej
+          uchwałę Zarządu w sprawie wykluczenia członka;
+        </li>
+        <li>
+          rozpatrywanie wniosków i propozycji zgłaszanych przez Zarząd i
+          poszczególnych członków Koła;
+        </li>
+        <li>
+          zatwierdzanie przedkładanego przez Zarząd pisemnego sprawozdania z
+          działalności Koła w poprzednim roku akademickim, w tym z wykorzystania
+          otrzymanych środków;
+        </li>
+        <li>zatwierdzanie preliminarza rocznego działalności Koła;</li>
+        <li>uchwalanie zmian Regulaminu Koła;</li>
+        <li>podejmowanie uchwały w sprawie rozwiązania Koła;</li>
+        <li>
+          podejmowanie uchwał w sprawie środków materialnych pozostających w
+          dyspozycji Koła w razie jego rozwiązania.
+        </li>
+      </ol>
+    </li>
+    <li>
+      W Walnym Zebraniu Członków Koła mają prawo uczestniczyć wszyscy członkowie
+      Koła.
+    </li>
+    <li>
+      Zwyczajne Walne Zebranie Członków Koła odbywa się co najmniej raz w
+      semestrze, przy czym w semestrze zimowym musi się ono odbyć nie później
+      niż do 15 listopada.
+    </li>
+    <li>
+      W razie potrzeby, w szczególności w przypadkach, o których mowa w § 3 ust.
+      11, jest zwoływane Nadzwyczajne Walne Zebranie Członków Koła.
+    </li>
+    <li>
+      Walne zebranie członków Koła zwołuje Zarząd z własnej inicjatywy, na
+      wniosek 30% członków Koła lub na wniosek Opiekuna Naukowego Koła.
+    </li>
+    <li>
+      O terminie, miejscu i proponowanym porządku obrad Walnego Zebrania Zarząd
+      informuje wszystkich członków Koła z co najmniej 7-dniowym wyprzedzeniem.
+      O Walnym Zebraniu Członków Koła Zarząd każdorazowo powiadamia Opiekuna
+      Naukowego Koła.
+    </li>
+    <li>
+      Walne Zebranie Członków Koła jest zdolne do podejmowania ważnych uchwał,
+      jeżeli uczestniczy w nim co najmniej połowa aktualnej liczby członków
+      Koła.
+    </li>
+    <li>
+      Jeżeli kworum, o którym mowa w ust. 8, nie zostanie osiągnięte w pierwszym
+      terminie, Zarząd zwołuje Walne Zebranie Członków Koła w drugim terminie, z
+      zachowaniem trybu określonego w ust. 7. Uchwały podjęte podczas zebrania
+      zwołanego w drugim terminie są ważne bez względu na liczbę członków
+      uczestniczących w Walnym Zebraniu, chyba że niniejszy Regulamin dla
+      ważności poszczególnych uchwał wymaga obecności co najmniej połowy liczby
+      członków Koła.
+    </li>
+    <li>
+      Uchwały na Walnym Zebraniu Członków Koła są podejmowane zwykłą większością
+      głosów, za wyjątkiem uchwał określonych w niniejszym Regulaminie, a
+      wymagających innej większości.
+    </li>
+  </ol>
+  <h2>Zarząd</h2>
+  <ol>
+    <li>
+      Zarząd jest wybierany przez Walne Zebranie spośród członków Koła. Uchwały
+      w sprawie wyboru Zarządu są podejmowane w głosowaniu tajnym bezwzględną
+      większością głosów.
+    </li>
+    <li>
+      Zarząd Koła składa się z trzech osób, wybieranych w drodze indywidualnych
+      głosowań. Funkcję kierowniczą pełni Przewodniczący, zaś pozostałymi
+      członkami Zarządu są Zastępca Przewodniczącego oraz Sekretarz.
+    </li>
+    <li>
+      Dokumenty w imieniu Koła podpisuje Przewodniczący lub z jego upoważnienia
+      członek Zarządu.
+    </li>
+    <li>Kadencja Zarządu trwa jeden rok akademicki.</li>
+    <li>
+      Uchwały Zarządu są podejmowane zwykłą większością głosów. W przypadku
+      równej liczby głosów, głos decydujący leży w gestii Przewodniczącego.
+    </li>
+    <li>Zarząd jest organem wykonawczym Koła.</li>
+    <li>
+      Do kompetencji Zarządu należy w szczególności: <ol>
+        <li>reprezentowanie Koła wobec Władz Uczelni oraz na zewnątrz;</li>
+        <li>kierowanie działalnością Koła;</li>
+        <li>sporządzanie preliminarza rocznego działalności Koła;</li>
+        <li>
+          sporządzanie pisemnego sprawozdania z działalności Koła w poprzednim
+          roku akademickim, w tym z wykorzystania otrzymanych środków;
+        </li>
+        <li>
+          rozpatrywanie deklaracji członkowskich oraz podejmowanie uchwał w
+          sprawie nabycia i utraty członkostwa w Kole;
+        </li>
+        <li>
+          zwoływanie Walnego Zebrania Członków Koła w trybie określonym w
+          niniejszym Regulaminie;
+        </li>
+        <li>
+          podejmowanie decyzji we wszystkich sprawach związanych działalnością
+          Koła, niezastrzeżonych dla Walnego Zebrania Członków Koła.
+        </li>
+      </ol>
+    </li>
+    <li>
+      Ustępujący Zarząd jest obowiązany przedłożyć Walnemu Zebraniu Członków
+      Koła do zatwierdzenia sprawozdanie z działalności Koła w poprzednim roku
+      kalendarzowym, w tym z wykorzystania otrzymanych środków.
+    </li>
+    <li>
+      Na wniosek co najmniej 30% członków Koła Zarząd lub poszczególni jego
+      członkowie mogą zostać przez Walne Zebranie Członków Koła odwołani w
+      czasie trwania kadencji większością 2/3 głosów przy obecności co najmniej
+      połowy liczby członków Koła.
+    </li>
+    <li>
+      Wybór nowego Zarządu lub uzupełnienie jego składu odbywa się w trybie
+      określonym w ust. 1.
+    </li>
+    <li>
+      Nowy zarząd ma obowiązek pisemnego zawiadomienia Prorektora AGH właściwego
+      do spraw studenckich o dokonanej zmianie składu osobowego Zarządu w
+      terminie 14 dni od dnia dokonania zmiany. Do zawiadomienia dołącza się
+      kopię uchwały Walnego Zebrania Członków Koła, na podstawie której dokonano
+      zmiany.
+    </li>
+  </ol>
+  <h2>Opiekun Naukowy Koła</h2>
+  <ol>
+    <li>
+      Opiekunem Naukowym Koła może zostać pracownik dydaktyczny, badawczy lub
+      badawczo-dydaktyczny AGH, o ile wyrazi pisemną zgodę na pełnienie tej
+      funkcji i uzyska zgodę Dziekana Wydziału.
+    </li>
+    <li>
+      Opiekun naukowy sprawuje opiekę nad działalnością merytoryczną Koła.
+    </li>
+    <li>
+      Na wniosek 2/3 członków Koła Naukowego, Zarząd ma prawo wystąpić do
+      Dziekana o zmianę Opiekuna. Wniosek o zmianę Opiekuna należy złożyć za
+      pośrednictwem odpowiedniego Pełnomocnika Rektora ds. Kół Naukowych, który
+      opiniuje wniosek i przedkłada Dziekanowi Wydziału. We wniosku należy
+      wskazać kandydata na nowego Opiekuna Naukowego Koła.
+    </li>
+  </ol>
+  <h2>Postanowienia końcowe</h2>
+  <ol>
+    <li>
+      Zmiana Regulaminu wymaga uchwały Walnego Zebrania Członków Koła podjętej
+      większością 2/3 głosów przy obecności co najmniej połowy liczby członków
+      Koła.
+    </li>
+    <li>
+      Zarząd Koła Naukowego ma obowiązek pisemnego zawiadamiania Prorektora AGH
+      właściwego do spraw studenckich o każdej zmianie treści niniejszego
+      Regulaminu oraz każdej uchwale Walnego Zebrania Członków Koła, w terminie
+      14 dni od dnia dokonania zmiany.
+    </li>
+    <li>
+      Walne Zebranie Członków Koła większością 2/3 głosów przy obecności co
+      najmniej połowy liczby członków Koła może podjąć uchwałę w sprawie
+      zawieszenia działalności lub rozwiązania Koła.
+    </li>
+    <li>Niniejszy Regulamin wchodzi w życie z dniem 14.11.2024.</li>
+  </ol>
+  <hr class="my-4" />
+  <a class="mb-8 block font-semibold" href="statut.doc" download
+    >Pobierz statut w pliku .doc.</a
+  >
 </Layout>
