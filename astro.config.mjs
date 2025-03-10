@@ -13,7 +13,4 @@ export default defineConfig({
       applyBaseStyles: false,
     }),
   ],
-  // for github pages
-  site: "https://kosciolek.github.io",
-  base: "/science-club-website-agh",
 });
