@@ -1,6 +1,6 @@
 # Automatic deploy
 
-Any push to the `main` branch in this repository will automatically build and deploy the site to (http://kntryton.agh.edu.pl/)[http://kntryton.agh.edu.pl/]
+Any push to the `main` branch in this repository will automatically build and deploy the site to [http://kntryton.agh.edu.pl/](http://kntryton.agh.edu.pl/)
 
 # Local development
 
