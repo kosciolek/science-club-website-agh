@@ -95,8 +95,8 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           port: 22
           protocol: ftps
-          local-dir: ${{ env.BUILD_PATH }}/dist
-          server-dir: /home/kolagrp/kntryton/public_html
+          local-dir: ${{ env.BUILD_PATH }}/dist/
+          server-dir: /home/kolagrp/kntryton/public_html/
   deploy:
     environment:
       name: github-pages
