@@ -13,5 +13,5 @@ export default defineConfig({
       applyBaseStyles: false,
     }),
   ],
-  site: process.env.GITHUB_ACTIONS ? undefined : "http://kntryton.agh.edu.pl",
+  site: "http://kntryton.agh.edu.pl/",
 });
