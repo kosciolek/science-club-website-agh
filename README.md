@@ -1,4 +1,16 @@
-# Building
+# Automatic deploy
+
+Any push to the `main` branch in this repository will automatically build and deploy the site to (http://kntryton.agh.edu.pl/)[http://kntryton.agh.edu.pl/]
+
+# Local development
+
+Install NodeJS. Version is specified in the [.nvmrc](.nvmrc) file.
+
+Install dependencies with `npm i`.
+
+Start the local server with `npm run dev`.
+
+# Manual building
 
 Install NodeJS. Version is specified in the [.nvmrc](.nvmrc) file.
 
