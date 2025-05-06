@@ -29,16 +29,9 @@ import { MOBILE_MENU_DIALOG_ID } from "./const";
   }
 </style>
 
-<header
-  class="fixed flex h-[theme(headerHeight)] w-full items-center justify-between bg-white px-4 md:hidden"
->
-  <a
-    href={`${import.meta.env.BASE_URL}`}
-    aria-label="Idź na stronę główną"
-    class="flex items-center"
-    ><Image src={logo} alt="logo" height={48} /><span
-      class="pl-4 text-lg font-semibold text-brand">Tryton</span
-    ></a
+<header class="fixed flex h-[theme(headerHeight)] w-full items-center justify-between bg-white px-4 md:hidden">
+  <a href={`${import.meta.env.BASE_URL}`} aria-label="Idź na stronę główną" class="flex items-center"
+    ><Image src={logo} alt="logo" height={48} /><span class="pl-4 text-lg font-semibold text-brand">Tryton</span></a
   >
   <MobileMenuButton />
 </header>
@@ -49,47 +42,26 @@ import { MOBILE_MENU_DIALOG_ID } from "./const";
   <nav>
     <ul class="flex flex-col gap-8">
       <li>
-        <a
-          autofocus
-          class="text-lg font-semibold"
-          href={`${import.meta.env.BASE_URL}/projekty`}>Projekty</a
-        >
+        <a autofocus class="text-lg font-semibold" href={`${import.meta.env.BASE_URL}projekty`}>Projekty</a>
       </li>
       <li>
-        <a
-          class="text-lg font-semibold"
-          href={`${import.meta.env.BASE_URL}/obszar-badan`}>Obszar badań</a
-        >
+        <a class="text-lg font-semibold" href={`${import.meta.env.BASE_URL}obszar-badan`}>Obszar badań</a>
       </li>
       <li>
-        <a
-          class="text-lg font-semibold"
-          href={`${import.meta.env.BASE_URL}/statut`}>Statut</a
-        >
+        <a class="text-lg font-semibold" href={`${import.meta.env.BASE_URL}statut`}>Statut</a>
       </li>
       <li>
-        <a
-          class="text-lg font-semibold"
-          href={`${import.meta.env.BASE_URL}/kontakt`}>Kontakt</a
-        >
+        <a class="text-lg font-semibold" href={`${import.meta.env.BASE_URL}kontakt`}>Kontakt</a>
       </li>
       <div class="flex gap-4">
         <li>
           <a href="https://www.facebook.com/profile.php?id=61560157695092"
-            ><Icon
-              name="fa-brands:facebook-square"
-              size={40}
-              aria-label="Strona Facebook"
-            /></a
+            ><Icon name="fa-brands:facebook-square" size={40} aria-label="Strona Facebook" /></a
           >
         </li>
         <li>
           <a href="https://www.linkedin.com/company/skn-tryton"
-            ><Icon
-              name="fa-brands:linkedin"
-              size={40}
-              aria-label="Strona LinkedIn"
-            /></a
+            ><Icon name="fa-brands:linkedin" size={40} aria-label="Strona LinkedIn" /></a
           >
         </li>
       </div>
