@@ -82,11 +82,11 @@ jobs:
           sudo apt install -y openvpn openvpn-systemd-resolved
       - name: Write config file
         run: |
-          echo "${{ secrets.AGH_2025_OVPN }}" > /client.ovpn
+          echo "${{ secrets.AGH_2025_OVPN }}" > ${{ github.workspace }}/client.ovpn
       - name: Connect to VPN
         uses: "kota65535/github-openvpn-connect-action@v2"
         with:
-          config_file: /client.ovpn
+          config_file: ${{ github.workspace }}/client.ovpn
       - name: FTP Deploy
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
