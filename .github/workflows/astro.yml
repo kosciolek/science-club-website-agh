@@ -76,7 +76,27 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: ${{ env.BUILD_PATH }}/dist
-
+      - name: Install OpenVPN
+        run: |
+          sudo apt update
+          sudo apt install -y openvpn openvpn-systemd-resolved
+      - name: Write config file
+        run: |
+          echo "${{ secrets.AGH_2025_OVPN }}" > /client.ovpn
+      - name: Connect to VPN
+        uses: "kota65535/github-openvpn-connect-action@v2"
+        with:
+          config_file: /client.ovpn
+      - name: FTP Deploy
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: kntryton.agh.edu.pl
+          username: kntryton
+          password: ${{ secrets.FTP_PASSWORD }}
+          port: 22
+          protocol: ftps
+          local-dir: ${{ env.BUILD_PATH }}/dist
+          server-dir: /home/kolagrp/kntryton/public_html
   deploy:
     environment:
       name: github-pages
